@@ -1,2 +1,4 @@
 .DS_Store
 node_modules/*
+webpack.development.config.js
+webpack.production.config.js
