@@ -44,7 +44,7 @@ function play(id) {
       if (++i === history.length) {
         isRunning = false
       }
-    }, i * 80)
+    }, i * 40)
   })
 }
 
