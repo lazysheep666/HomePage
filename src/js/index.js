@@ -37,7 +37,7 @@ function play(id) {
           let colorIndex = Math.floor(Math.random() * colors.length)
           head.children[j].style.color = colors[colorIndex]
         } else {
-          head.children[j].style.color = '#000'
+          head.children[j].style.color = '#2c3e50'
         }
         j++
       }
