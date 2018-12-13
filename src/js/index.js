@@ -3,25 +3,24 @@ import '../style/index.styl'
 
 let isRunning = false
 
-const init = (id) => {
-  listen(id)
-  play(id)
+const init = (id, tarStr) => {
+  listen(id, tarStr)
+  play(id, tarStr)
 }
 
-function listen(id) {
+function listen(id, tarStr) {
   document.getElementById(id).addEventListener('click', function() {
     if (isRunning) {
       return
     }
-    play(id)
+    play(id, tarStr)
   })
 }
 
-function play(id) {
+function play(id, tarStr) {
   isRunning = true
   const head = document.getElementById(id)
   const colors = '#66CCFF #FFFF00 #9999FF #006666 #0080FF #53C5B9 #00FFCC #99FFFF #EE0000 #363636 #EE82EE'.split(' ')
-  const tarStr = 'LazySheep'
   let str = ''
   for (const ch of tarStr) {
     str += '<span></span>'
@@ -48,4 +47,4 @@ function play(id) {
   })
 }
 
-init('title')
+init('title', 'LazySheep')
