@@ -47,4 +47,4 @@ function play(id, tarStr) {
   })
 }
 
-init('title', 'LazySheep')
+init('title', 'Haolan Yang')
