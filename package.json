@@ -9,8 +9,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node app.js",
-    "start": "webpack-dev-server --open --config  webpack.development.config.js"
+    "wbuild": "webpack --config webpack.production.config.js",
+    "wstart": "webpack-dev-server --open --config  webpack.development.config.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
