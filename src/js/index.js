@@ -1,6 +1,10 @@
 import run from './RandomStr'
 import '../style/index.styl'
 
+if (module.hot) {
+  module.hot.accept();
+}
+
 let isRunning = false
 
 const init = (id, tarStr) => {
